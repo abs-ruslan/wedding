@@ -1,0 +1,146 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Great Vibes';
+            src: url('./fonts/GreatVibes-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }        
+        @font-face {
+            font-family: 'Clear Sans';
+            src: url('./fonts/ClearSans-Light.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        body { 
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;            
+            min-width: 320px;
+            background-color: #f2efea;
+            font-family: 'Clear Sans';
+        }
+        .month {
+            margin-top: 20vw;
+            letter-spacing: 10px;
+        }
+        table {
+            text-align: center;
+        }
+        td, th {
+            padding: 0 10px;
+        }
+        .names {
+            font-family: 'Great Vibes', cursive;
+        }
+        /* МОБИЛКА */
+        @media (max-width: 767px) {
+            body, table {
+                font-size: 6vw;
+            }
+            .div-heart {
+                margin-top: -14vw;
+            }
+            .svg-heart {
+                width: 20vw; 
+                height: 20vw; 
+            }
+            .div-line {
+                margin-top: -7vw;
+            }
+            .svg-line {
+                width: 15vw; 
+                height: 27vw;
+            }
+            .div-names {
+                margin: 20vw 0;
+            }
+            .names {
+                font-size: 15vw;
+                margin: 0 0 -3vw 0;
+            }
+        }
+        /* ПК */
+        @media (min-width: 768px) {
+            body, table {
+                font-size: 2vw;
+            }
+            .div-heart {
+                margin-top: -3.5vw;
+            }
+            .svg-heart {
+                width: 5vw; 
+                height: 5vw;
+            }
+            .div-line {
+                margin-top: -1.8vw;
+            }
+            .svg-line {
+                width: 5vw; 
+                height: 6vw;
+            }
+            .div-names {
+                margin: 10vw 0;
+            }
+            .names {
+                font-size: 15vw;
+                margin: 0 0 -3vw 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <div>
+            <div>
+            <p style="margin-bottom: 0;"">Приглашаем вас</p>
+            <p style="margin-top: 0;">на венчание!</p>
+            </div>
+            <p class="month">
+                <b>АВГУСТ</b>
+            </p>
+            <table>
+                <tr>
+                    <td>Чт</td>
+                    <td>Пт</td>
+                    <td>Сб</td>
+                    <td>Вс</td>
+                    <td>Пн</td>
+                    <td>Вт</td>
+                    <td>Ср</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                </tr>
+            </table>
+            <div class="div-heart">
+                <svg class="svg-heart" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="#000000" stroke-width="0.8" d="M17 16C15.8 17.3235 12.5 20.5 12.5 20.5C12.5 20.5 9.2 17.3235 8 16C5.2 12.9118 4.5 11.7059 4.5 9.5C4.5 7.29412 6.1 5.5 8.5 5.5C10.5 5.5 11.7 6.82353 12.5 8.14706C13.3 6.82353 14.5 5.5 16.5 5.5C18.9 5.5 20.5 7.29412 20.5 9.5C20.5 11.7059 19.8 12.9118 17 16Z"/>
+                </svg>    
+            </div>
+            <div class="div-line">          
+                <svg class="svg-line" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <path d="M12 21V3" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="div-names">
+                <p class="names">Руслан</p>
+                <p class="names">и</p>
+                <p class="names">Валерия</p>
+            </div>
+            <p>
+                <b>16 августа 2026</b>
+            </p>
+        </div>
+    </div>
+</body>
