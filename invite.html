@@ -21,11 +21,18 @@
             justify-content: center;
             width: 100%;            
             min-width: 320px;
-            background-color: #f2efea;
+            background-image: url("./images/background.jpg");
             font-family: 'Clear Sans';
+            color:#F25786;
+        }
+        .date {
+            padding-bottom: 10vw;
+        }
+        .invite {
+            margin-top: 10vw;
         }
         .month {
-            margin-top: 20vw;
+            margin-top: 10vw;
             letter-spacing: 10px;
         }
         table {
@@ -57,7 +64,7 @@
                 height: 27vw;
             }
             .div-names {
-                margin: 15vw 0;
+                margin: 10vw 0 15vw 0;
             }
             .names {
                 font-size: 15vw;
@@ -84,7 +91,7 @@
                 height: 6vw;
             }
             .div-names {
-                margin: 10vw 0;
+                margin: 15vw 0 10vw 0;
             }
             .names {
                 font-size: 15vw;
@@ -96,9 +103,9 @@
 <body>
     <div align="center">
         <div>
-            <div>
-            <p style="margin-bottom: 0;"">Приглашаем вас</p>
-            <p style="margin-top: 0;">на венчание!</p>
+            <div class="invite">
+                <p style="margin-bottom: 0;"">Приглашаем вас</p>
+                <p style="margin-top: 0;">на венчание!</p>
             </div>
             <p class="month">
                 <b>АВГУСТ</b>
@@ -125,12 +132,12 @@
             </table>
             <div class="div-heart">
                 <svg class="svg-heart" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#000000" stroke-width="0.8" d="M17 16C15.8 17.3235 12.5 20.5 12.5 20.5C12.5 20.5 9.2 17.3235 8 16C5.2 12.9118 4.5 11.7059 4.5 9.5C4.5 7.29412 6.1 5.5 8.5 5.5C10.5 5.5 11.7 6.82353 12.5 8.14706C13.3 6.82353 14.5 5.5 16.5 5.5C18.9 5.5 20.5 7.29412 20.5 9.5C20.5 11.7059 19.8 12.9118 17 16Z"/>
+                    <path stroke="#5F662E" stroke-width="0.8" d="M17 16C15.8 17.3235 12.5 20.5 12.5 20.5C12.5 20.5 9.2 17.3235 8 16C5.2 12.9118 4.5 11.7059 4.5 9.5C4.5 7.29412 6.1 5.5 8.5 5.5C10.5 5.5 11.7 6.82353 12.5 8.14706C13.3 6.82353 14.5 5.5 16.5 5.5C18.9 5.5 20.5 7.29412 20.5 9.5C20.5 11.7059 19.8 12.9118 17 16Z"/>
                 </svg>    
             </div>
             <div class="div-line">          
                 <svg class="svg-line" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <path d="M12 21V3" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 21V3" stroke="#5F662E" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
             <div class="div-names">
@@ -138,9 +145,11 @@
                 <p class="names">и</p>
                 <p class="names">Валерия</p>
             </div>
-            <p>
-                <b>16 августа 2026</b>
-            </p>
+            <div class="date">
+                <p>
+                    <b>16 августа 2026</b>
+                </p>
+            </div>
         </div>
     </div>
 </body>
