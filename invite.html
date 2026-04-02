@@ -15,18 +15,27 @@
             font-style: normal;
             font-display: swap;
         }
-        body { 
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            width: 100%;            
+        html {
             min-width: 320px;
-            background-image: url("./images/background.jpg");
+            min-height: 480px;
+        }
+        body { 
             font-family: 'Clear Sans';
             color:#F25786;
+            background-image: url("./images/background.jpg");
+            border: #5F662E dashed 1vw;
+            box-sizing: border-box;
+            margin: 5vw;
+        }
+        p {
+            margin: 0;
+        }
+        .main {
+            text-align: center
         }
         .date {
-            padding-bottom: 10vw;
+            margin-top: 30vw;
+            margin-bottom: 10vw;
         }
         .invite {
             margin-top: 10vw;
@@ -37,12 +46,16 @@
         }
         table {
             text-align: center;
+            display: inline-table;
         }
         td, th {
-            padding: 0 10px;
+            padding: 0 2vw;
         }
         .names {
             font-family: 'Great Vibes', cursive;
+        }
+        .div-names {
+            margin-top: 10vw;
         }
         /* МОБИЛКА */
         @media (max-width: 767px) {
@@ -63,18 +76,14 @@
                 width: 15vw; 
                 height: 27vw;
             }
-            .div-names {
-                margin: 10vw 0 15vw 0;
-            }
             .names {
                 font-size: 15vw;
-                margin: 0 0 -3vw 0;
             }
         }
         /* ПК */
         @media (min-width: 768px) {
             body, table {
-                font-size: 2vw;
+                font-size: 6vw;
             }
             .div-heart {
                 margin-top: -3.5vw;
@@ -90,22 +99,18 @@
                 width: 5vw; 
                 height: 6vw;
             }
-            .div-names {
-                margin: 15vw 0 10vw 0;
-            }
             .names {
                 font-size: 15vw;
-                margin: 0 0 -3vw 0;
             }
         }
     </style>
 </head>
 <body>
-    <div align="center">
+    <div class="main">
         <div>
             <div class="invite">
-                <p style="margin-bottom: 0;"">Приглашаем вас</p>
-                <p style="margin-top: 0;">на венчание!</p>
+                <p>Приглашаем вас</p>
+                <p>на венчание!</p>
             </div>
             <p class="month">
                 <b>АВГУСТ</b>
